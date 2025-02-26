@@ -33,6 +33,9 @@
             tournamentNameValue = new TextBox();
             entryFeeValue = new TextBox();
             entryFeeLabel = new Label();
+            selectTeamLabel = new Label();
+            selectTeamDropDown = new ComboBox();
+            createnewTeamLink = new LinkLabel();
             SuspendLayout();
             // 
             // label1
@@ -83,12 +86,44 @@
             entryFeeLabel.TabIndex = 10;
             entryFeeLabel.Text = "Entry Fee";
             // 
+            // selectTeamLabel
+            // 
+            selectTeamLabel.AutoSize = true;
+            selectTeamLabel.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            selectTeamLabel.ForeColor = SystemColors.MenuHighlight;
+            selectTeamLabel.Location = new Point(27, 350);
+            selectTeamLabel.Name = "selectTeamLabel";
+            selectTeamLabel.Size = new Size(156, 37);
+            selectTeamLabel.TabIndex = 12;
+            selectTeamLabel.Text = "Select Team";
+            // 
+            // selectTeamDropDown
+            // 
+            selectTeamDropDown.FormattingEnabled = true;
+            selectTeamDropDown.Location = new Point(27, 406);
+            selectTeamDropDown.Name = "selectTeamDropDown";
+            selectTeamDropDown.Size = new Size(232, 38);
+            selectTeamDropDown.TabIndex = 13;
+            // 
+            // createnewTeamLink
+            // 
+            createnewTeamLink.AutoSize = true;
+            createnewTeamLink.Location = new Point(189, 357);
+            createnewTeamLink.Name = "createnewTeamLink";
+            createnewTeamLink.Size = new Size(118, 30);
+            createnewTeamLink.TabIndex = 14;
+            createnewTeamLink.TabStop = true;
+            createnewTeamLink.Text = "create New";
+            // 
             // CreateTournamentForm
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1371, 749);
+            Controls.Add(createnewTeamLink);
+            Controls.Add(selectTeamDropDown);
+            Controls.Add(selectTeamLabel);
             Controls.Add(entryFeeValue);
             Controls.Add(entryFeeLabel);
             Controls.Add(tournamentNameValue);
@@ -109,5 +144,8 @@
         private TextBox tournamentNameValue;
         private TextBox entryFeeValue;
         private Label entryFeeLabel;
+        private Label selectTeamLabel;
+        private ComboBox selectTeamDropDown;
+        private LinkLabel createnewTeamLink;
     }
 }
