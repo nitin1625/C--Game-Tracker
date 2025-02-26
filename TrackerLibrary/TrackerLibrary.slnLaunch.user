@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "TrackerLibrary.csproj",
+        "Action": "Start",
+        "DebugTarget": "TrackerLibrary"
+      },
+      {
+        "Path": "..\\TrackerUI\\TrackerUI.csproj",
+        "Action": "Start",
+        "DebugTarget": "TrackerUI"
+      }
+    ]
+  }
+]
